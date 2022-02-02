@@ -54,7 +54,7 @@ class EngagementTemplateView(CourseTemplateWithNavView):
     presenter = None
 
 
-class EngagementContentView(AnalyticsV1Mixin, EngagementTemplateView):
+class EngagementContentView(AnalyticsV0Mixin, EngagementTemplateView):
     template_name = 'courses/engagement_content.html'
     page_title = _('Engagement Content')
     page_name = {
